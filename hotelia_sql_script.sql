@@ -3,7 +3,7 @@ use hotelia;
 
 create table room_type(
 room_type_id int primary key auto_increment,
-room_type varchar(20) not null,
+room_type varchar(20) not null unique,
 room_rate decimal(10,2) not null);
 
 create table room(
